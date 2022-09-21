@@ -23,7 +23,7 @@ namespace The_safe_of_the_Pilot_brothers.Controllers
            
             ConfigureMapSize(current, mapSize);
             InitMap(mapSize);
-            InitButtons(current, mapSize);
+            InitCheckBoxes(current, mapSize);
             RandomReversRowColumnInMap(9);
             UpdateMap();
         }
@@ -61,7 +61,7 @@ namespace The_safe_of_the_Pilot_brothers.Controllers
                 }
             }
         }
-        private static void InitButtons(Form current, int mapSize)
+        private static void InitCheckBoxes(Form current, int mapSize)
         {
             CheckBoxes = new CheckBox[mapSize, mapSize];
             for (int i = 0; i < mapSize; i++)
